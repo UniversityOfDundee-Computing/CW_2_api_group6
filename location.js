@@ -13,10 +13,24 @@ function getCoords(){
     .then((resp) => resp.json())
     .then(function (data) {
 
-      lat = data.result.latitude;
-      long = data.result.longitude;
-      localStorage.setItem('latitude', lat);
-      localStorage.setItem('longitude', long);
+      fromLat = data.result.latitude;
+      fromLong = data.result.longitude;
+      localStorage.setItem('fromLatitude', fromLat);
+      localStorage.setItem('fromLongitude', fromLong);
+
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+    fetch(toUrl)
+    .then((resp) => resp.json())
+    .then(function (data) {
+
+      toLat = data.result.latitude;
+      fromLong = data.result.longitude;
+      localStorage.setItem('toLatitude', toLat);
+      localStorage.setItem('toLongitude', toLong);
 
     })
     .catch(function (error) {
