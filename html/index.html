@@ -41,19 +41,11 @@
     </nav>
 
 
-    <div class="container my-3">
-        <main class="mx-2">
-            <h1 class="display-1">Search</h1>
-
-         
-
-        </main>
-
-    </div>
+    
 
     <div class="container my-3">
         <main class="mx-2">
-          
+            <div class="d-flex align-items-center"><h1 class="display-1 ">Search</h1></div>
           <!-- Creates two columns -->
           <div class="row pt-4">
             <div class="col-sm">
@@ -62,7 +54,7 @@
                         <h2>From:</h2>
                     </div>
                     <div class="row">
-                        <input type="text" name="fromPlace" id="FP">
+                        <input id="FP" type="text" class="form-control" placeholder="Postcode">
                         <label for="fromPlace">Please enter starting location</label>
                     </div>
                 </div>
@@ -72,16 +64,24 @@
                     <h2>To:</h2>
                 </div>
                 <div class="row">
-                    <input type="text" name="toPlace" id="TP">
+                    <input id="TP" type="text" class="form-control" placeholder="Postcode">
                     <label for="toPlace">Please enter your final destination</label>
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <input class="btn btn-dark" type="submit" value="Search">
+                <button id="searchButton" class="btn btn-dark px-3 btn-lg" type="button" name="button">Search</button>
+            </div>
+
+            <div id="printText" class="row mt-4 pt-3 border-dark">
+            </div>
+
+            <div id="locations" class="ml-sm-0 ml-md-4 row">
             </div>
         </main>
     
       </div>
+
+      
 
     
 
@@ -111,5 +111,6 @@
     </div>
     <!-- Copyright -->
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="../JS/location.js"></script>
 </html>
