@@ -34,6 +34,6 @@ function getCoords(){
 
     })
     .catch(function (error) { //If an error occurs
-      console.log(error); //Print the error to console
+      console.log(error); //Print the error to console 
     });
 }
