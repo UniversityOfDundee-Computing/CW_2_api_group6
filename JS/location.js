@@ -79,10 +79,11 @@ function refreshPage() {
   locationTo = document.getElementById("TP").value;
   fromUrl = 'https://api.postcodes.io/postcodes/' + locationFrom;
   toUrl = 'https://api.postcodes.io/postcodes/' + locationTo;
-  fromOrTo = "POSTCODE FROM"
-  url = fromUrl;
-  dest(fromUrl, fromOrTo);
   fromOrTo = "POSTCODE TO"
   url = toUrl;
   dest(toUrl, fromOrTo);
+  fromOrTo = "POSTCODE FROM"
+  url = fromUrl;
+  dest(fromUrl, fromOrTo);
+  
 }
