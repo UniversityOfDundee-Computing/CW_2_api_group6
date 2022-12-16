@@ -2,10 +2,10 @@
 
 const appId = '96fa6eb9'
 const appKey = 'b2869c19f6db671b24b67a3ad3de6bb5'
-var fromLatitude = localStorage.getItem('fromLatitude');
-var fromLongitude = localStorage.getItem('fromLongitude');
-var toLatitude = localStorage.getItem('toLatitude');
-var toLongitude = localStorage.getItem('toLongitude');
+var fromLatitude = sessionStorage.getItem('POSTCODE FROM LAT');
+var fromLongitude = sessionStorage.getItem('POSTCODE FROM LONG');
+var toLatitude = sessionStorage.getItem('POSTCODE TO LAT');
+var toLongitude = sessionStorage.getItem('POSTCODE TO LONG');
 
 start = fromLongitude + ',' + fromLatitude
 end = toLongitude + ',' + toLatitude

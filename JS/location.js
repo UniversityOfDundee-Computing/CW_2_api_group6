@@ -39,6 +39,15 @@ function dest(url, fromOrTo) {
       cardText.innerHTML = data.result.postcode;
       button.innerHTML = "View";
 
+      latScheme = fromOrTo + " LAT"
+      longScheme = fromOrTo + " LONG"
+
+      latitude = data.result.latitude
+      longitude = data.result.longitude
+
+      sessionStorage.setItem(latScheme, latitude);
+      sessionStorage.setItem(longScheme, longitude);
+
 
 
 
