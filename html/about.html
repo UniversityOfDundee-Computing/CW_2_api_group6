@@ -43,17 +43,37 @@
     <!-- Body -->
     <div class="container my-3">
         <main class="mx-2">
-            <h1 class="display-1">About us</h1>
-
-            <blockquote class="blockquote">
-                <p class="mb-0">The best site I've ever seen, no cap.</p>
-                <footer class="blockquote-footer">Linus Tech Tips</footer>
-            </blockquote>
-
-            <div class="col-sm">
-                <p class="lead">
-                    Our site employs 2 APIs, x and y.
-                </p>
+            <h1 class="display-1 mb-4">About us</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-sm mr-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Location API</h5>
+                            <p class="card-text">The Location API takes two Postcode inputs from the user, a "To" postcode and a "From" postcode, and returns to the user the location information of the two postcodes and sends the longitude and latitude information to the Transport API.</p>
+                        </div>
+                    </div>
+                     <div class="card col-sm ml-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Transport API</h5>
+                            <p class="card-text">The Transport API takes the latitude and longitude values from the Location API and return the times for all valid methods of transport between the two points. It then finds the shortest distance to the nearest station for both start and end points.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Group Members</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Daniyal</li>
+                            <li class="list-group-item">Edward</li>
+                            <li class="list-group-item">Euan</li>
+                            <li class="list-group-item">Hannah</li>
+                            <li class="list-group-item">Jack</li>
+                            <li class="list-group-item">Lucca</li>
+                          </ul>
+                    </div>
+                </div>
             </div>
 
 
@@ -63,7 +83,7 @@
     </div>
 
 
-    <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <!-- Grid container -->
         <div class="container p-4"></div>
         <!-- Grid container -->
