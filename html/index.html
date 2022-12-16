@@ -23,59 +23,68 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand">Search tool</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Search<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </nav>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <h1>Insert title here</h1>
-        </div>
-        <div class="col"></div>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <div class="row">
-                <h2>From:</h2>
-            </div>
-            <div class="row">
-                <input type="text" name="fromPlace" id="FP">
-                <label for="fromPlace">Please enter starting location</label>
-            </div>
-        </div>
-        <div class="col">
-            <div class="row">
-                <h2>To:</h2>
-            </div>
-            <div class="row">
-                <input type="text" name="toPlace" id="TP">
-                <label for="toPlace">Please enter your final destination</label>
-            </div>
-        </div>
-        <div class="col"></div>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col ">
-            <input class="btn btn-dark" type="submit" value="Search">
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Search<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+            </ul>
         </div>
-        <div class="col"></div>
+    </nav>
+
+
+    <div class="container my-3">
+        <main class="mx-2">
+            <h1 class="display-1">Search</h1>
+
+         
+
+        </main>
+
     </div>
+
+    <div class="container my-3">
+        <main class="mx-2">
+          
+          <!-- Creates two columns -->
+          <div class="row pt-4">
+            <div class="col-sm">
+                <div class="col">
+                    <div class="row">
+                        <h2>From:</h2>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="fromPlace" id="FP">
+                        <label for="fromPlace">Please enter starting location</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="row">
+                    <h2>To:</h2>
+                </div>
+                <div class="row">
+                    <input type="text" name="toPlace" id="TP">
+                    <label for="toPlace">Please enter your final destination</label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <input class="btn btn-dark" type="submit" value="Search">
+            </div>
+        </main>
+    
+      </div>
+
+    
+
 
 
 
@@ -85,10 +94,22 @@
         crossorigin="anonymous"></script>
 
 </body>
-<footer>
-    <p>
-        group 6 coursework 2. ect ect. names of involved.
-    </p>
+<footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container p-4"></div>
+    <!-- Grid container -->
+    <section class="mb-4">
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://github.com/UniversityOfDundee-Computing/CW_2_api_group6" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+    </section>
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright: Group 6
+    </div>
+    <!-- Copyright -->
 </footer>
 
 </html>
