@@ -1,7 +1,7 @@
 
 
-const appId = '96fa6eb9'
-const appKey = 'b2869c19f6db671b24b67a3ad3de6bb5'
+const appId = '314b234b'
+const appKey = 'db3e21da2d52aeabad568800c92075bc'
 var fromLatitude = sessionStorage.getItem('POSTCODE FROM LAT');
 var fromLongitude = sessionStorage.getItem('POSTCODE FROM LONG');
 var toLatitude = sessionStorage.getItem('POSTCODE TO LAT');
@@ -12,7 +12,7 @@ end = toLongitude + ',' + toLatitude
 
 //This was taken from the usage example page of the transport API we used. It is not my own code, I do not claim it to be my own
 //Source: https://github.com/transportapi/usage-examples/blob/master/src/examples/journey-planner/main.js
-const url = 'http://transportapi.com/v3/uk/public/journey/from/lonlat:' + start + '/to/lonlat:' + end + '.json?service=silverrail&app_id=' + appId + '&app_key=' + appKey
+const url = `http://transportapi.com/v3/uk/public/journey/from/lonlat:${start}/to/lonlat:${end}.json?service=tfl&app_id=${appId}&app_key=${appKey}`
 
 fetch(url)
     .then((resp) => resp.json())
@@ -43,3 +43,4 @@ fetch(url)
             </div>
           `)
     })
+    console.log(data)
