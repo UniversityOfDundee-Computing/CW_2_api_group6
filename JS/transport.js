@@ -12,7 +12,7 @@ end = toLongitude + ',' + toLatitude
 
 //This was taken from the usage example page of the transport API we used. It is not my own code, I do not claim it to be my own
 //Source: https://github.com/transportapi/usage-examples/blob/master/src/examples/journey-planner/main.js
-const url = 'http://transportapi.com/v3/uk/public/journey/from/lonlat:' + start + '/to/lonlat:' + end + '.json?service=tfl&app_id=' + appId + '&app_key=' + appKey
+const url = `http://transportapi.com/v3/uk/public/journey/from/lonlat:${start}/to/lonlat:${end}.json?service=tfl&app_id=${appId}&app_key=${appKey}`
 
 fetch(url)
     .then((resp) => resp.json())
@@ -43,3 +43,4 @@ fetch(url)
             </div>
           `)
     })
+    console.log(data)
